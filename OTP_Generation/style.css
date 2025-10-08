@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; 
+    color: #333;
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 2em;
+}
+
+
+button {
+    background-color: #3498db; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2980b9; 
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+#otpDisplay {
+    margin-top: 40px;
+    padding: 15px 30px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e74c3c; 
+    background-color: #ecf0f1;
+    min-width: 200px; 
+    transition: all 0.5s ease;
+}
+
+#otpDisplay:empty::before {
+    content: 'Click the button above';
+    font-size: 0.5em;
+    color: #7f8c8d;
+    font-weight: normal;
+}
